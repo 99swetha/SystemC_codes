@@ -1,0 +1,3 @@
+g++ -g -Wall -I $SYSTEMC_HOME/include half_adder.cpp full_adder.cpp driver.cpp monitor.cpp full_adder_main.cpp -c
+
+g++ half_adder.o full_adder.o driver.o monitor.o full_adder_main.o -L $SYSTEMC_HOME/lib -lsystemc
